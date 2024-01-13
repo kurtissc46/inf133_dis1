@@ -1,0 +1,98 @@
+/*Reset some default styles for better consistency */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/*Apply some basic styles to the body */
+body {
+    background-color: lightblue;
+    color: #333;
+}
+
+/*Style the heading */
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the paragraph */
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Style the horizontal line */
+hr {
+    width: 98%;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+
+
+
+@font-face {
+    font-family: "Harry Potter";
+    src: url("assets/parry-hotter.regular.ttf") format(truetype);
+}
+
+.harry-potter-font {
+    font-family: Harry Potter;
+}
+
+.profile-section {
+    display: flex;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.profile-section-text {
+    display: flex;
+    max-width: 800px;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.left-top-padding {
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.left-padding {
+    padding-left: 20px;
+}
+
+.navigation-bar {
+    background-color: #e3e3e3;
+    border: 1px solid black;
+}
+
+.navigation-bar a {
+    color: #000000;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 16px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navigation-bar a:hover {
+    background-color: whitesmoke;
+}
+
+.profile {
+    max-width: 200px;
+    width: 40vw;
+    height: auto;
+}
+
+.section {
+    padding-top: 16px;
+    padding-left: 16px;
+    max-width: 800px;
+}
