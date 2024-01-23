@@ -11,7 +11,7 @@ EMAIL: kurtissc@uci.edu
   <meta name="author" content="Kurtis Chan">
   <meta name="description" content="my portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="index.css" />
   <title>Kurtis Chan's Portfolio</title>
 </head>
 <body>
@@ -19,7 +19,7 @@ EMAIL: kurtissc@uci.edu
   <!-- Navigation Bar that has features for active link and hovering over links -->
   <nav>
     <div class="navigation-bar">
-      <a href=""> Home</a>
+      <a class="active" href=""> Home</a>
       <a href="resume_KurtisChan.pdf"> Resume</a>
       <a href="https://github.com/kurtissc46"> Github</a>
       <a href="courses.html"> Courses Taken</a>
@@ -28,39 +28,66 @@ EMAIL: kurtissc@uci.edu
 
   <!-- flex container that contains my profile picture and another flex container for text. -->
   <div class="profile-section">
-    <img 
-      class="profile"
-      src="myface.jpg"
-      alt="my profile picture"
-    />
+    <div class="profile-image">
+      <img 
+        src="myface.jpg"
+        alt="picture of Kurtis Chan"
+      />
+    
+      <address><p>Contact: <a href="mailto:kurtissc@uci.edu">kurtissc@uci.edu</a>.</p></address>
+    </div>
 
     <!-- Text description to the right of my profile picture. -->
     <div class="profile-section-text">
-      <p class="left-padding"> 
-        <strong class="harry-potter-font">Kurtis S. Chan </strong> 
-        <br>
-        <p>
-          I am a 3rd year Compuer Science student at the University of California, Irvine. 
-          I am planning to graduate after the Fall 2024 Quarter. Contact me at
-          <a href="mailto:kurtissc@uci.edu">kurtissc@uci.edu</a>.
-        </p>
-      </p>
-    </div>
+        <h1 class="title">Kurtis S. Chan</h1> 
 
+        <p>I am a 3rd year Compuer Science student at the University of California, Irvine. 
+        I am planning to graduate after the Fall 2024 Quarter. I hope to find a role as a software engineer 
+        to contribute to teams working on challenging software problems and applications.  </p>
+
+        </p>
+    </div>
   </div>
 
-  <br>
+  <hr>
+  
+  <!-- Section about my software experience. -->
+  <section>
+    <p>My experience includes:</p>
+    <ul>
+        <li>June 2023 - August 2023 | I worked as a software intern for the Northrop Grumman 
+            Corporation. I handled the software maintenance for the EPS-R CAPS applications, 
+            which provides telemetry and control, mission planning and cryptographic planning for the EPS payload. I 
+            worked on writing large scripts to modify and maintain the codebases of four applications. </li>
+        <li>June 2024 - August 2024 | I will be returning to Northrop Grumman to intern again as a part of their Payload and Ground
+            Systems division.
+        </li>
+    </ul>
+  </section>
+
   <hr>
 
-  <div class="section">
+  <!-- Section about my interests. -->
+  <section>
+    <img 
+        class="image-right"
+        src="uci_anteater.png"
+        alt="UCI anteater logo"
+    />
     <p>Here are some of my interests:</p>
-  </div>
+    <ul>
+        <li>I love watching new movies and shows. Here's my Letterboxd <a href="https://letterboxd.com/sillychubs/">profile</a>.</li>
+        <li>I like to listen to new music whever I can. Here's my RateYourMusic <a href="https://pl.rateyourmusic.com/~sillychubs">profile</a>.</li>
+        <li>I liked playing games on the Nintendo Switch, specifically Smash Ultimate. I main Diddy Kong.</li>
+    </ul>
+  </section>
 
+  <hr>
 
-  <p class="left-top-padding">
+  <section>
     <a href="http://validator.w3.org/check?uri=referer">
       W3C validator
     </a>
-  </p>
+  </section>
 </body>
 </html>

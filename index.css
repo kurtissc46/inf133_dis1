@@ -6,6 +6,7 @@ body, h1, p {
 
 /*Apply some basic styles to the body */
 body {
+    font-family: 'Times New Roman', Times, serif;
     background-color: lightblue;
     color: #333;
 }
@@ -19,52 +20,57 @@ h1 {
 
 /* Style the paragraph */
 p {
-    text-align: center;
+    text-align: left;
     margin: 10px 0;
 }
 
 /* Style the horizontal line */
 hr {
-    width: 98%;
-    border: none;
     height: 1px;
-    color: black;
-    background-color: black;
+    width: 98%;
+    color: #000040;
+    background-color: #000040;
+    border: 0em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
 }
 
 
 
-
-@font-face {
-    font-family: "Harry Potter";
-    src: url("assets/parry-hotter.regular.ttf") format(truetype);
+/* Style the title (my name) */
+.title {
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: bold;
+    padding-right: 10px;
+    color: #00446e;
 }
 
-.harry-potter-font {
-    font-family: Harry Potter;
-}
-
+/* Style the profile at the top of webpage */
 .profile-section {
     display: flex;
-    padding-top: 16px;
-    padding-left: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 16px;
 }
 
+/* Style the image of me */
+.profile-image {
+    display: flex;
+    max-width: 200px;
+    flex-direction: column;
+    width: 40vw;
+    height: auto;
+}
+
+/*  */
 .profile-section-text {
     display: flex;
     max-width: 800px;
     flex-direction: column;
-    padding-top: 16px;
-    padding-left: 16px;
-}
-
-.left-top-padding {
-    padding-top: 16px;
-    padding-left: 16px;
-}
-
-.left-padding {
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .navigation-bar {
@@ -85,14 +91,58 @@ hr {
     background-color: whitesmoke;
 }
 
-.profile {
-    max-width: 200px;
-    width: 40vw;
-    height: auto;
+.navigation-bar a.active {
+    background-color: whitesmoke;
 }
 
-.section {
-    padding-top: 16px;
-    padding-left: 16px;
-    max-width: 800px;
+section {
+    margin-top: 20px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 30px;
+    width: 90vw;
+    max-width: 1000px;
+}
+
+.image-right {
+    float: right;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 30%;
+}
+
+section a:hover {
+    color: rgb(63, 72, 255);
+}
+
+ul {
+    line-height: 130%;
+}
+
+@media screen and (max-width: 500px) {
+    .navigation-bar {
+        text-align: center;
+    }
+
+    .navigation-bar a {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 18px;
+    }
+
+    .profile-image {
+        width: 50%;
+        max-width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile-section {
+        flex-direction: column;
+    }
+
+    .image-right {
+        display: none;
+    }
 }
