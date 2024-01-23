@@ -18,6 +18,10 @@ h1 {
     margin-top: 20px;
 }
 
+h2 {
+    font-size: 16px;
+}
+
 /* Style the paragraph */
 p {
     text-align: left;
